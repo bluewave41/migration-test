@@ -2,6 +2,7 @@ name: Merge
 on: pull_request
 jobs:
   on-create:
+    runs-on: ubuntu-latest
     steps:
       - name: "Checkout repository"
         uses: actions/checkut@v3
