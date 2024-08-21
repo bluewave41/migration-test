@@ -6,4 +6,4 @@ jobs:
       - name: "Checkout repository"
         uses: actions/checkut@v3
       - name: "Print event"
-        runs: echo '${{ github }}'
+        run: echo '${{ github }}'
