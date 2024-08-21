@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: "Checkout repository"
         uses: actions/checkout@v3
-      - name: "Move into repo"
-        run: "ls"
+      - name: "Fix migrations"
+        uses: bluewave41/migration-event@v1.1
       - name: "Print event"
         run: echo '${{ toJSON(github) }}'
