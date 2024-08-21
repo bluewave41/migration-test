@@ -1,0 +1,9 @@
+name: Merge
+on: pull_request
+jobs:
+  on-create:
+    steps:
+      - name: "Checkout repository"
+        uses: actions/checkut@v3
+      - name: "Print event"
+        runs: echo '${{ github }}'
