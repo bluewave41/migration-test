@@ -13,9 +13,3 @@ jobs:
         uses: bluewave41/migration-action@main
         with:
           path: server
-      - name: Upload log file (even if previous step fails)
-        if: always()
-        uses: actions/upload-artifact@v3
-        with:
-          name: logs
-          path: log.json
