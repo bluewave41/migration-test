@@ -1,5 +1,7 @@
 name: Merge
-on: pull_request
+on:
+  pull_request:
+    types: [closed]
 jobs:
   on-create:
     if: ${{ github.event.pull_request.merged == true }}
