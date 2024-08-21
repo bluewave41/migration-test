@@ -7,4 +7,4 @@ jobs:
       - name: "Checkout repository"
         uses: actions/checkout@v3
       - name: "Print event"
-        run: echo '${{ github }}'
+        run: echo '${{ toJSON(github) }}'
